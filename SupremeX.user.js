@@ -5,6 +5,7 @@
 // @description  Complete checkout quickly
 // @author       fiji @ adidas atc
 // @grant        none
+// @include      https://www.supremenewyork.com/checkout
 // ==/UserScript==
 
 var order_info = {name: "your name", // your first and last name
