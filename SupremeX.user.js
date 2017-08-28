@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         SupremeX
-// @namespace    http://www.supremenewyork.com/
+// @namespace    supreme-x
 // @version      1.0.0
 // @description  Complete checkout quickly
 // @author       fiji @ adidas atc
