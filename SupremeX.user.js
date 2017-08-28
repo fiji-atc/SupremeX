@@ -12,10 +12,10 @@ var order_info = {name: "your name", // your first and last name
                   phone: "5555555555", // your phone number
                   address1: "123 cook lane", // your street address
                   address2: "apartment 1", // leave blank if you dont have one
-                  zip_code: "00000",
-                  city: "New York",
-                  state_code: "NY",
-                  country: "USA"
+                  zip_code: "00000", // your zip code
+                  city: "New York", // city
+                  state_code: "NY", // state code, if you dont know this then look it up son
+                  country: "USA" // only two options, "USA" or "CANADA"
                  };
 var card_info = {cc_number: "xxx", // your full credit card number
                  cc_cvv: "xxx", // the 3 digit security code
