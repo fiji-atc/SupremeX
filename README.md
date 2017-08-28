@@ -14,5 +14,9 @@ It will take you to the source code of the script, in here you should modify the
 
 Done.
 
-
 (This script was created for people in the USA, I have no clue if it works anywhere else.)
+
+## TODO
+ - [ ] Autofill size on product page
+ - [ ] Captcha harvesting (manually or with a service)
+ - [ ] One click checkout (checkout from the product page so you can quickly move to the next item, would require captcha harvesting)
