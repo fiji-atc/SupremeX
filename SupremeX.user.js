@@ -27,26 +27,29 @@ var card_info = {cc_number: "xxx", // your full credit card number
 (function() {
     'use strict';
 
-    // billing/shipping information
-    document.getElementsByName("order[billing_name]")[0].value = order_info.name;
-    document.getElementsByName("order[email]")[0].value = order_info.email;
-    document.getElementsByName("order[tel]")[0].value = order_info.phone;
-    document.getElementsByName("order[billing_address]")[0].value = order_info.address1;
-    document.getElementsByName("order[billing_address_2]")[0].value = order_info.address2;
-    document.getElementsByName("order[billing_zip]")[0].value = order_info.zip_code;
-    document.getElementsByName("order[billing_city]")[0].value = order_info.city;
-    document.getElementsByName("order[billing_state]")[0].value = order_info.state_code;
-    document.getElementsByName("order[billing_country]")[0].value = order_info.country;
+    // checkout automation
+    if (document.location == "https://www.supremenewyork.com/checkout") {
+        // billing/shipping information
+        document.getElementsByName("order[billing_name]")[0].value = order_info.name;
+        document.getElementsByName("order[email]")[0].value = order_info.email;
+        document.getElementsByName("order[tel]")[0].value = order_info.phone;
+        document.getElementsByName("order[billing_address]")[0].value = order_info.address1;
+        document.getElementsByName("order[billing_address_2]")[0].value = order_info.address2;
+        document.getElementsByName("order[billing_zip]")[0].value = order_info.zip_code;
+        document.getElementsByName("order[billing_city]")[0].value = order_info.city;
+        document.getElementsByName("order[billing_state]")[0].value = order_info.state_code;
+        document.getElementsByName("order[billing_country]")[0].value = order_info.country;
 
-    // credit card information
-    document.getElementsByName("credit_card[cnb]")[0].value = card_info.cc_number;
-    document.getElementsByName("credit_card[vval]")[0].value = card_info.cc_cvv;
-    document.getElementsByName("credit_card[month]")[0].value = card_info.cc_month;
-    document.getElementsByName("credit_card[year]")[0].value = card_info.cc_year;
+        // credit card information
+        document.getElementsByName("credit_card[cnb]")[0].value = card_info.cc_number;
+        document.getElementsByName("credit_card[vval]")[0].value = card_info.cc_cvv;
+        document.getElementsByName("credit_card[month]")[0].value = card_info.cc_month;
+        document.getElementsByName("credit_card[year]")[0].value = card_info.cc_year;
 
-    // accept terms
-    $('div.icheckbox_minimal').iCheck('check');
+        // accept terms
+        $('div.icheckbox_minimal').iCheck('check');
 
-    // complete
-    document.getElementsByClassName("button checkout")[0].click();
+        // complete
+        document.getElementsByClassName("button checkout")[0].click();
+    }
 })();
