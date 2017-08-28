@@ -17,8 +17,8 @@ var order_info = {name: "your name", // your first and last name
                   state_code: "NY",
                   country: "USA"
                  };
-var card_info = {cc_number: "4111111111111111", // your full credit card number
-                 cc_cvv: "911", // the 3 digit security code
+var card_info = {cc_number: "xxx", // your full credit card number
+                 cc_cvv: "xxx", // the 3 digit security code
                  cc_month: "04", // month of expiration, if it is 1-9 use 01, 02, 03...
                  cc_year: "2019" // year of expiration
                 };
