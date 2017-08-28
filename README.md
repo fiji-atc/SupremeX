@@ -13,3 +13,6 @@ Click on the Tampermonkey extension icon and go to Dashboard, from there you sho
 It will take you to the source code of the script, in here you should modify the information to be that of your own. When you are done, click the Save button or press Ctrl + S.
 
 Done.
+
+
+(This script was created for people in the USA, I have no clue if it works anywhere else.)
