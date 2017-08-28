@@ -7,20 +7,20 @@
 // @grant        none
 // ==/UserScript==
 
-var order_info = {name: "FIJI ATC",
-                  email: "fiji@adidas.com",
-                  phone: "5556661337",
-                  address1: "725 5th Ave",
-                  address2: "Floor 58", // leave blank if you dont have one
-                  zip_code: "10022",
+var order_info = {name: "your name", // your first and last name
+                  email: "your@email.com", // your email
+                  phone: "5555555555", // your phone number
+                  address1: "123 cook lane", // your street address
+                  address2: "apartment 1", // leave blank if you dont have one
+                  zip_code: "00000",
                   city: "New York",
                   state_code: "NY",
                   country: "USA"
                  };
-var card_info = {cc_number: "4111111111111111",
-                 cc_cvv: "911",
-                 cc_month: "04", // month is the number, if it is 1-9 use 01, 02, 03...
-                 cc_year: "2019"
+var card_info = {cc_number: "4111111111111111", // your full credit card number
+                 cc_cvv: "911", // the 3 digit security code
+                 cc_month: "04", // month of expiration, if it is 1-9 use 01, 02, 03...
+                 cc_year: "2019" // year of expiration
                 };
 
 (function() {
