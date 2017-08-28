@@ -8,4 +8,8 @@ Get the [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dh
 
 Get the SupremeX userscript [here](https://github.com/fiji-atc/SupremeX/raw/master/SupremeX.user.js) and click Install.
 
+Click on the Tampermonkey extension icon and go to Dashboard, from there you should see the SupremeX userscript. On the far right where it says Actions click on the edit button.
+
+It will take you to the source code of the script, in here you should modify the information to be that of your own. When you are done, click the Save button or press Ctrl + S.
+
 Done.
