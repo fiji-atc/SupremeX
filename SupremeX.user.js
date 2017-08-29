@@ -24,7 +24,7 @@ var card_info = {cc_number: "xxx", // your full credit card number
                  cc_year: "2019" // year of expiration
                 };
 
-var auto_process = false // set this to true if you want the checkout to automatically click the process payment button
+var auto_process = false; // set this to true if you want the checkout to automatically click the process payment button
 
 (function() {
     'use strict';
