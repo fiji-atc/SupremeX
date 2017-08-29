@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         SupremeX
-// @namespace    supreme-x
+// @namespace    http://www.supremenewyork.com/
 // @version      1.0.0
 // @description  Complete checkout quickly
 // @author       fiji @ adidas atc
@@ -23,6 +23,8 @@ var card_info = {cc_number: "xxx", // your full credit card number
                  cc_month: "04", // month of expiration, if it is 1-9 use 01, 02, 03...
                  cc_year: "2019" // year of expiration
                 };
+
+var auto_process = false // set this to true if you want the checkout to automatically click the process payment button
 
 (function() {
     'use strict';
@@ -50,6 +52,11 @@ var card_info = {cc_number: "xxx", // your full credit card number
         $('div.icheckbox_minimal').iCheck('check');
 
         // complete
-        document.getElementsByClassName("button checkout")[0].click();
+        if (auto_process)
+            document.getElementsByClassName("button checkout")[0].click();
     }
+
+    // shop redirect
+    if (document.location == "http://www.supremenewyork.com/shop")
+        document.location = "http://www.supremenewyork.com/shop/all";
 })();
